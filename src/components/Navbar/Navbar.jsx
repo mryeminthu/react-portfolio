@@ -16,18 +16,14 @@ const Navbar = () => {
   return (
     <nav>
       <Link to="/" className="my-logo">
-        Ye Min Thu
+        YMT
       </Link>
       <i
         className={`fa-solid fa-bars ${isActive ? "fa-xmark" : ""}`}
         id="hamburger-icon"
         onClick={toggleMenu}
       ></i>
-      <ul
-        id="navLinks"
-        class="navLinks"
-        className={isActive ? "active-menu" : ""}
-      >
+      <ul id="navLinks" className={isActive ? "active-menu" : ""}>
         <li className="menu-links" onClick={closeMenu}>
           <Link to="/">Home</Link>
         </li>

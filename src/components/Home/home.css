@@ -1,38 +1,30 @@
 .home {
-  max-width: 800px;
-  margin: 0 auto;
-  padding: 20px;
+  width: 100%;
   text-align: center;
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  height: 100vh;
-  overflow: hidden;
+  height: 100vh; 
+  line-height: 2.1;
+  padding: 15px;
 }
 
 .header-image {
-  max-width: 100%;
-  margin-bottom: 20px;
+  margin: 15px 0 10px; 
   width: 100px;
   height: 100px;
   border-radius: 50%;
 }
 
-header {
-  margin-bottom: 20px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
 header h1 {
-  margin: 0;
+  font-family: 'Poppins', sans-serif;
 }
 
 header p.appear-animation {
   display: inline-block;
   white-space: nowrap;
-  overflow: hidden;
+  font-family: 'Montserrat', sans-serif;
+  color: rgb(210, 204, 246);
+  font-size: 1.2rem;
 }
 
 header p.appear-animation span {
@@ -51,7 +43,7 @@ header p.appear-animation span {
 }
 
 section.bounce-animation {
-  animation: bounceAnimation 2s infinite;
+  animation: bounceAnimation 3s infinite;
 }
 
 @keyframes bounceAnimation {
@@ -66,34 +58,28 @@ section.bounce-animation {
   }
 }
 
+.about-me {
+  color: #10e7b5;
+  font-size: 1.2rem;
+}
+
 .social-icons {
-  margin-top: 20px;
+  margin-top: 15px;
 }
 
 .social-icons a {
   color: #333;
   text-decoration: none;
   margin: 0 10px;
+  color: #e6f1ff;
 }
 
 .social-icons i {
   margin-right: 5px;
 }
 
-/* Media Query for Desktop and Tablet */
-@media (min-width: 768px) {
-  .home {
-    flex-direction: row;
-    justify-content: space-between;
-  }
-
-  .header-image {
-    width: 40%;
-  }
-
-  header {
-    width: 60%;
-    align-items: flex-start;
-    text-align: left;
+@media (max-width: 768px) {
+  header p.appear-animation {
+    font-size: 1rem;
   }
 }

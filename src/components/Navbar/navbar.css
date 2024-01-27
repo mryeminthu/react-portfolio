@@ -11,7 +11,7 @@
   
   .my-logo {
     color: #fff;
-    font-size: 32px;
+    font-size: 2rem;
   }
   
   #hamburger-icon {
@@ -28,12 +28,12 @@
   
   #navLinks li a {
     color: #fff;
-    font-size: 1.5rem;
+    font-size: 1.4rem;
     transition: 0.6s ease-in;
   }
   
   #navLinks li a:hover {
-    color: rgb(181, 225, 217);
+    color: #10e7b5;;
   }
   
   @media (max-width: 768px) {
@@ -50,7 +50,7 @@
       min-height: 100vh;
       position: fixed;
       top: 70px;
-      left: -100%;
+      left: -110%;
       transition: left 0.5s ease;
     }
 
