@@ -59,10 +59,20 @@ section.bounce-animation {
 }
 
 .about-me {
-  color: #10e7b5;
   font-size: 1.2rem;
 }
 
+@keyframes colorChange {
+  0% {
+    color: #10e7b5;
+  }
+  50% {
+    color: #e6f1ff;
+  }
+  100% {
+    color: #10e7b5;
+  }
+}
 .social-icons {
   margin-top: 15px;
 }
@@ -76,6 +86,7 @@ section.bounce-animation {
 
 .social-icons i {
   margin-right: 5px;
+  font-size: 2rem;
 }
 
 @media (max-width: 768px) {

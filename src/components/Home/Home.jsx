@@ -30,7 +30,13 @@ const Home = () => {
           ))}
         </p>
         {aboutMe.map((line, index) => (
-          <p className="about-me" key={index}>
+          <p
+            className="about-me"
+            key={index}
+            style={{
+              animation: `colorChange 10s infinite alternate ${index * 2}s`,
+            }}
+          >
             {line}
           </p>
         ))}
@@ -43,21 +49,21 @@ const Home = () => {
             target="_blank"
             rel="noopener noreferrer"
           >
-            <i className="fab fa-github"></i> GitHub
+            <i className="fab fa-github"></i>
           </a>
           <a
             href="https://twitter.com/mryeminthu"
             target="_blank"
             rel="noopener noreferrer"
           >
-            <i className="fab fa-twitter"></i> Twitter
+            <i className="fab fa-twitter"></i>
           </a>
           <a
             href="https://www.linkedin.com/in/ye-min-thu-76456a214/"
             target="_blank"
             rel="noopener noreferrer"
           >
-            <i className="fab fa-linkedin"></i> LinkedIn
+            <i className="fab fa-linkedin"></i>
           </a>
         </div>
       </section>
