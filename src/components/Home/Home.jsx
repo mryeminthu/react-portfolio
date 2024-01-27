@@ -2,11 +2,12 @@ import React from "react";
 import "./home.css";
 import myimage from "./ymt.jpg";
 const Home = () => {
-  const text = "Full-stack developer from Myanmar.";
+  const text = "Full-stack developer.";
   const aboutMe = [
-    "I create top-quality software using Ruby on Rails and React, building modern and scalable websites.",
-    "If you need assistance in building your website, I'm here to help.",
-    "Let's work together to make it happen!",
+    "I create top-quality websites",
+    "using Ruby on Rails and React.",
+    "If you require assistance with your website development,",
+    "I am at your service.",
   ];
 
   return (
@@ -41,8 +42,8 @@ const Home = () => {
           </p>
         ))}
       </header>
-      <section className="bounce-animation">
-        <h3>Connect with me</h3>
+      <section>
+        <h3 className="bounce-animation">Connect with me</h3>
         <div className="social-icons">
           <a
             href="https://github.com/mryeminthu"

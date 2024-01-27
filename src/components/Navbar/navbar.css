@@ -15,8 +15,8 @@
   }
   
   #hamburger-icon {
-    color: #fff;
-    font-size: 32px;
+    color: #ffffff;
+    font-size: 2rem;
     display: none;
     cursor: pointer;
   }
@@ -44,8 +44,9 @@
     #navLinks {
       display: flex;
       flex-direction: column;
+      justify-content: flex-start;
       align-items: center;
-      background-color: rgba(0, 0, 0, 0.9);
+      background-color: #020c1b;
       width: 100vw;
       min-height: 100vh;
       position: fixed;
@@ -57,7 +58,8 @@
     .menu-links {
       width: 100%;
       text-align: center;
-      margin-bottom: 2rem;
+      padding: 1.2rem 0;
+      border-radius: 5px;
     }
   
     .menu-links:hover {
