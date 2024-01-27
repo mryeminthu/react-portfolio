@@ -84,9 +84,22 @@ section .bounce-animation {
   text-decoration: none;
   margin: 0 10px;
   color: #ffffff;
+  animation: iconsChange 5s infinite alternate;
 }
 
 .social-icons i {
   margin-right: 5px;
   font-size: 2rem;
+}
+
+@keyframes iconsChange {
+  0% {
+    color: #ffffff;
+  }
+  50% {
+    color: #10e7b5;
+  }
+  100% {
+    color: #ffffff;
+  }
 }

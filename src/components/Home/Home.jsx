@@ -1,6 +1,8 @@
 import React from "react";
 import "./home.css";
 import myimage from "./ymt.jpg";
+import SocialIcons from "./SocialIcons";
+
 const Home = () => {
   const text = "Full-stack developer.";
   const aboutMe = [
@@ -44,29 +46,7 @@ const Home = () => {
       </header>
       <section>
         <h3 className="bounce-animation">Connect with me</h3>
-        <div className="social-icons">
-          <a
-            href="https://github.com/mryeminthu"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <i className="fab fa-github"></i>
-          </a>
-          <a
-            href="https://twitter.com/mryeminthu"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <i className="fab fa-twitter"></i>
-          </a>
-          <a
-            href="https://www.linkedin.com/in/ye-min-thu-76456a214/"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <i className="fab fa-linkedin"></i>
-          </a>
-        </div>
+        <SocialIcons />
       </section>
     </div>
   );
