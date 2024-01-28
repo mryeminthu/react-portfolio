@@ -1,7 +1,7 @@
 import React from "react";
 import { motion } from "framer-motion";
 import "./home.css";
-import myimage from "./ymt.jpg";
+import myimage from "./logo.gif";
 import resumePDF from "./resume.pdf";
 
 const Home = () => {
