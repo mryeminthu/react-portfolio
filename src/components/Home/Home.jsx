@@ -1,21 +1,24 @@
 import React from "react";
 import "./home.css";
 import myimage from "./ymt.jpg";
-import SocialIcons from "./SocialIcons";
+import resumePDF from "./resume.pdf";
 
 const Home = () => {
   const text = "Full-stack developer.";
-  const aboutMe = [
-    "I create top-quality websites",
-    "using Ruby on Rails and React.",
-    "If you require assistance with your website development,",
-    "I am at your service.",
-  ];
+
+  const resumeDownload = () => {
+    const link = document.createElement("a");
+    link.href = resumePDF;
+    link.download = "resume.pdf";
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
+  };
 
   return (
-    <div className="home">
-      <header>
-        <img src={myimage} alt="MyImage" className="header-image" />
+    <div className="home-component">
+      <section>
+        <img src={myimage} alt="MyImage" className="home-image" />
         <h2>Hello, I am Ye Min Thu.</h2>
         <p className="appear-animation">
           {text.split(" ").map((word, wordIndex) => (
@@ -32,21 +35,10 @@ const Home = () => {
             </React.Fragment>
           ))}
         </p>
-        {aboutMe.map((line, index) => (
-          <p
-            className="about-me"
-            key={index}
-            style={{
-              animation: `colorChange 10s infinite alternate ${index * 2}s`,
-            }}
-          >
-            {line}
-          </p>
-        ))}
-      </header>
-      <section>
-        <h3 className="bounce-animation">Connect with me</h3>
-        <SocialIcons />
+        <br />
+        <button className="resume-button" onClick={resumeDownload}>
+          Resume
+        </button>
       </section>
     </div>
   );
