@@ -1,4 +1,5 @@
 import React from "react";
+import { motion } from "framer-motion";
 import "./about.css";
 import SocialIcons from "./SocialIcons";
 
@@ -14,23 +15,38 @@ const About = () => {
   ];
   return (
     <section className="about-me-section">
-      <h2 className="about-me-title">About me</h2>
+      <motion.h2
+        initial={{ opacity: 0, x: -800 }}
+        animate={{ opacity: 1, x: 0 }}
+        transition={{ duration: 1.5 }}
+        className="about-me-title"
+      >
+        About me
+      </motion.h2>
       <div className="about-me-and-icons">
         {aboutMe.map((line, index) => (
-          <p
+          <motion.p
             className="about-me-paragraph"
             key={index}
             style={{
               animation: `colorChange 10s infinite alternate ${index * 2}s`,
             }}
+            initial={{ opacity: 0, x: 800 }}
+            animate={{ opacity: 1, x: 0 }}
+            transition={{ duration: 1.5 }}
           >
             {line}
-          </p>
+          </motion.p>
         ))}
-        <div className="icons-div">
+        <motion.div
+          className="icons-div"
+          initial={{ opacity: 0, y: -800 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 1.5 }}
+        >
           <h3 className="bounce-animation">Connect with me</h3>
           <SocialIcons />
-        </div>
+        </motion.div>
       </div>
     </section>
   );
