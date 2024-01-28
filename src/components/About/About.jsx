@@ -4,19 +4,21 @@ import SocialIcons from "./SocialIcons";
 
 const About = () => {
   const aboutMe = [
-    "I hold a computer science degree and proudly identify as a Micronaut.",
+    "I hold a computer science degree",
+    "and have completed a remote web development program from Microverse,",
+    "as well as other reputable web platforms like Coursera and LinkedIn.",
     "I create top-quality websites",
     "using Ruby on Rails and React.",
     "If you require assistance with your website development,",
     "I am at your service.",
   ];
   return (
-    <div>
-      <h2>About me</h2>
-      <div>
+    <section className="about-me-section">
+      <h2 className="about-me-title">About me</h2>
+      <div className="about-me-and-icons">
         {aboutMe.map((line, index) => (
           <p
-            className="about-me"
+            className="about-me-paragraph"
             key={index}
             style={{
               animation: `colorChange 10s infinite alternate ${index * 2}s`,
@@ -25,12 +27,12 @@ const About = () => {
             {line}
           </p>
         ))}
-        <section>
+        <div className="icons-div">
           <h3 className="bounce-animation">Connect with me</h3>
           <SocialIcons />
-        </section>
+        </div>
       </div>
-    </div>
+    </section>
   );
 };
 

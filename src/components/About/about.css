@@ -1,6 +1,54 @@
-.about-me {
+.about-me-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  line-height: 1.8;
+  padding: 12px;
+}
+
+.about-me-title {
+  margin: 15px 0;
+  font-size: 2rem;
+}
+
+.about-me-and-icons {
+  width: auto;
+  height: auto;
+  padding: 15px;
+  border-radius: 7px;
+  position: relative;
+  overflow: hidden;
+  border: 2px solid #ffffff;
+}
+
+@keyframes borderAnimation {
+  0% {
+    border-color: #c5074d;
+  }
+  25% {
+    border-color: #afd809;
+  }
+  50% {
+    border-color: #199209;
+  }
+  75% {
+    border-color: #bd0595;
+  }
+  100% {
+    border-color: #4CAF50;
+  }
+}
+
+.about-me-and-icons {
+  animation: borderAnimation 10s infinite linear;
+}
+
+.about-me-paragraph {
     font-size: 1.2rem;
     font-weight: 500;
+    color:#4CAF50;
   }
   
   @keyframes colorChange {
@@ -15,7 +63,7 @@
     }
   }
   
-  section .bounce-animation {
+  .icons-div .bounce-animation {
     animation: bounceAnimation 3s infinite;
   }
   
@@ -39,11 +87,10 @@
     color: #333;
     text-decoration: none;
     margin: 0 10px;
-    color: #ffffff;
     animation: iconsChange 5s infinite alternate;
   }
   
-  .social-icons i {
+  .social-icons a i {
     margin-right: 5px;
     font-size: 2rem;
   }
