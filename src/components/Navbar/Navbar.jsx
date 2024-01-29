@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import "./navbar.css";
+import NavLogo from "./nav-logo.gif";
 
 const Navbar = () => {
   const [isActive, setIsActive] = useState(false);
@@ -15,8 +16,8 @@ const Navbar = () => {
 
   return (
     <nav>
-      <Link to="/" className="my-logo">
-        YMT
+      <Link to="/" className="nav-logo-div">
+        <img src={NavLogo} alt="Logo" />
       </Link>
       <i
         className={`fa-solid fa-bars ${isActive ? "fa-xmark" : ""}`}
