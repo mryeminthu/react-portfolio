@@ -1,7 +1,7 @@
 import React from "react";
 import { motion } from "framer-motion";
 import "./home.css";
-import myimage from "./logo.gif";
+import homeImage from "./home.gif";
 import resumePDF from "./resume.pdf";
 
 const Home = () => {
@@ -19,7 +19,7 @@ const Home = () => {
   return (
     <div className="home-component">
       <section>
-        <img src={myimage} alt="MyImage" className="home-image" />
+        <img src={homeImage} alt="HomeImage" className="home-image" />
         <motion.h2
           initial={{ opacity: 0, x: -900 }}
           animate={{ opacity: 1, x: 0 }}
