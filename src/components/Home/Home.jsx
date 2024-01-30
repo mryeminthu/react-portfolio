@@ -56,6 +56,7 @@ const Home = () => {
           onClick={resumeDownload}
         >
           Resume
+          <i className="fas fa-download" style={{ marginLeft: "5px" }}></i>
         </motion.button>
       </section>
     </div>

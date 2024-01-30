@@ -32,6 +32,9 @@ const Navbar = () => {
           <Link to="/about">About</Link>
         </li>
         <li className="menu-links" onClick={closeMenu}>
+          <Link to="/projects">Projects</Link>
+        </li>
+        <li className="menu-links" onClick={closeMenu}>
           <Link to="/contact">Contact</Link>
         </li>
       </ul>
