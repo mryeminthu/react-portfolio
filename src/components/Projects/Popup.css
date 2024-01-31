@@ -39,6 +39,7 @@
 
 .popup-content-right {
   flex: 1;
+  padding-right: 23px;
 }
 
 .popup-content h2 {
@@ -48,7 +49,7 @@
 .technology-stack {
   display: flex;
   justify-content: space-around;
-  margin: 15px 0;
+  margin: 20px 0;
 }
 
 .technology-stack li {
@@ -56,6 +57,7 @@
   padding: 8px 12px;
   border-radius: 8px;
   font-weight: 400;
+  font-size: 0.8rem;
 }
 
 .popup-content img {
@@ -67,6 +69,8 @@
 
 .popup-content p {
   margin-bottom: 20px;
+  font-size: 1.2rem;
+  font-weight: 400;
 }
 
 .popup-content-right {
@@ -97,5 +101,9 @@
 @media (min-width: 768px) {
   .popup-content {
     flex-direction: row;
+  }
+
+  .technology-stack li {
+    font-size: 1.1rem;
   }
 }

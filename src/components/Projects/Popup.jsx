@@ -3,7 +3,15 @@ import { motion } from "framer-motion";
 import { useEffect } from "react";
 import "./Popup.css";
 
-const Popup = ({ title, imageUrl, description, technologies, onClose }) => {
+const Popup = ({
+  title,
+  imageUrl,
+  description,
+  technologies,
+  liveURL,
+  githubURL,
+  onClose,
+}) => {
   useEffect(() => {
     document.body.classList.add("popup-open");
     return () => {
@@ -40,16 +48,10 @@ const Popup = ({ title, imageUrl, description, technologies, onClose }) => {
           <p>{description}</p>
           <div className="popup-btns">
             <ul>
-              <li
-                className="popup-btn"
-                onClick={() => window.open("URL_FOR_LIVE")}
-              >
+              <li className="popup-btn" onClick={() => window.open(liveURL)}>
                 <i className="fas fa-external-link-alt"></i> See Live
               </li>
-              <li
-                className="popup-btn"
-                onClick={() => window.open("URL_FOR_GITHUB")}
-              >
+              <li className="popup-btn" onClick={() => window.open(githubURL)}>
                 <i className="fab fa-github"></i> See Source
               </li>
             </ul>

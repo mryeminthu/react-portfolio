@@ -1,28 +1,29 @@
 import React, { useState } from "react";
 import { motion } from "framer-motion";
 import "./Projects.css";
-import leaderImage from "./images/leader.png";
+import portfolio from "./images/portfolio.png";
+import mft from "./images/mft.png";
 import logoImage from "./images/logo.svg";
 import Popup from "./Popup";
 
 const projectsData = [
   {
-    title: "Project 1",
-    technologies: ["HTML", "CSS", "React", "Postgresql"],
-    imageUrl: leaderImage,
+    title: "Portfolio",
+    technologies: ["HTML", "CSS", "JavaScript"],
+    imageUrl: portfolio,
     description:
-      "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.",
-    liveURL: "URL_FOR_LIVE_PROJECT_1",
-    githubURL: "URL_FOR_GITHUB_PROJECT_1",
+      "This is my first simple portfolio website created in Microverse Module 1. Please explore my portfolio to see how I create cool websites using HTML, CSS, and JavaScript. I turn tricky ideas into simple and awesome designs.",
+    liveURL: "https://mryeminthu.github.io/Portfolio",
+    githubURL: "https://github.com/mryeminthu/Portfolio",
   },
   {
-    title: "Project 2",
-    technologies: ["HTML", "CSS", "React", "Ruby"],
-    imageUrl: logoImage,
+    title: "Myanmar Fight Team",
+    technologies: ["HTML", "CSS", "JavaScript"],
+    imageUrl: mft,
     description:
-      "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.",
-    liveURL: "URL_FOR_LIVE_PROJECT_2",
-    githubURL: "URL_FOR_GITHUB_PROJECT_2",
+      "This website is for people who love martial arts. Whether you're a beginner or an experienced fighter, we have programs for everyone. Take a look around and see what we offer.",
+    liveURL: "https://mryeminthu.github.io/Capstone-Project",
+    githubURL: "https://github.com/mryeminthu/Capstone-Project",
   },
   {
     title: "Project 3",
