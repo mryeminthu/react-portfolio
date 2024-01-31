@@ -1,8 +1,16 @@
 import React from "react";
 import { motion } from "framer-motion";
+import { useEffect } from "react";
 import "./Popup.css";
 
 const Popup = ({ title, imageUrl, description, technologies, onClose }) => {
+  useEffect(() => {
+    document.body.classList.add("popup-open");
+    return () => {
+      document.body.classList.remove("popup-open");
+    };
+  }, []);
+
   return (
     <div className="popup-container" onClick={onClose}>
       <motion.div

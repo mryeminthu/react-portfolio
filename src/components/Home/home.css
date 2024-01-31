@@ -45,15 +45,15 @@ section p.appear-animation span {
   margin-top: 12px;
   padding: 10px 20px;
   font-size: 1.2rem;
-  background-color: #4CAF50; 
-  color: white;
+  background-color: #3498db;
+  color: #ffffff;
   border: none;
   border-radius: 7px;
   cursor: pointer;
 }
 
 .resume-button:hover {
-  background-color: #288e2d; 
+  background-color: #078ae1;
 }
 
 .fas.fa-download {

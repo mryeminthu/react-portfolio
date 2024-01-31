@@ -43,13 +43,18 @@ const projectsData = [
 
 const Projects = () => {
   const [selectedProject, setSelectedProject] = useState(null);
+  const [isPopupOpen, setIsPopupOpen] = useState(false);
 
   const openPopup = (project) => {
     setSelectedProject(project);
+    setIsPopupOpen(true);
+    document.body.classList.add("popup-open");
   };
 
   const closePopup = () => {
     setSelectedProject(null);
+    setIsPopupOpen(false);
+    document.body.classList.remove("popup-open");
   };
 
   const titleWords = "My Recent Works".split(" ");
@@ -105,6 +110,8 @@ const Projects = () => {
           </motion.div>
         ))}
       </div>
+
+      {isPopupOpen && <div className="overlay" onClick={closePopup}></div>}
 
       {selectedProject && (
         <Popup
