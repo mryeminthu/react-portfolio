@@ -8,14 +8,14 @@ import Popup from "./Popup";
 const projectsData = [
   {
     title: "Project 1",
-    technologies: ["HTML", "CSS", "React"],
+    technologies: ["HTML", "CSS", "React", "Postgresql"],
     imageUrl: leaderImage,
     description:
       "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.",
   },
   {
     title: "Project 2",
-    technologies: ["HTML", "CSS", "React"],
+    technologies: ["HTML", "CSS", "React", "Ruby"],
     imageUrl: logoImage,
     description:
       "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.",
