@@ -12,7 +12,7 @@ const Popup = ({ title, imageUrl, description, technologies, onClose }) => {
   }, []);
 
   return (
-    <div className="popup-container" onClick={onClose}>
+    <div className="popup-container">
       <motion.div
         className="popup-content"
         onClick={(e) => e.stopPropagation()}
@@ -20,6 +20,9 @@ const Popup = ({ title, imageUrl, description, technologies, onClose }) => {
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 1.5 }}
       >
+        <div className="popup-close" onClick={onClose}>
+          <i className="fas fa-times"></i>
+        </div>
         <div className="popup-content-left">
           <h2>{title}</h2>
           {Array.isArray(technologies) && technologies.length > 0 && (
@@ -37,8 +40,18 @@ const Popup = ({ title, imageUrl, description, technologies, onClose }) => {
           <p>{description}</p>
           <div className="popup-btns">
             <ul>
-              <li className="popup-btn">See Live</li>
-              <li className="popup-btn">See Source</li>
+              <li
+                className="popup-btn"
+                onClick={() => window.open("URL_FOR_LIVE")}
+              >
+                <i className="fas fa-external-link-alt"></i> See Live
+              </li>
+              <li
+                className="popup-btn"
+                onClick={() => window.open("URL_FOR_GITHUB")}
+              >
+                <i className="fab fa-github"></i> See Source
+              </li>
             </ul>
           </div>
         </div>

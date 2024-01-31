@@ -12,6 +12,8 @@ const projectsData = [
     imageUrl: leaderImage,
     description:
       "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.",
+    liveURL: "URL_FOR_LIVE_PROJECT_1",
+    githubURL: "URL_FOR_GITHUB_PROJECT_1",
   },
   {
     title: "Project 2",
@@ -19,6 +21,8 @@ const projectsData = [
     imageUrl: logoImage,
     description:
       "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.",
+    liveURL: "URL_FOR_LIVE_PROJECT_2",
+    githubURL: "URL_FOR_GITHUB_PROJECT_2",
   },
   {
     title: "Project 3",
@@ -26,18 +30,24 @@ const projectsData = [
     imageUrl: logoImage,
     description:
       "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.",
+    liveURL: "URL_FOR_LIVE_PROJECT_3",
+    githubURL: "URL_FOR_GITHUB_PROJECT_3",
   },
   {
     title: "Project 4",
     technologies: ["HTML", "CSS", "React"],
     imageUrl: logoImage,
     description: "Description for Project 4",
+    liveURL: "URL_FOR_LIVE_PROJECT_4",
+    githubURL: "URL_FOR_GITHUB_PROJECT_4",
   },
   {
     title: "Project 5",
     technologies: ["HTML", "CSS", "React"],
     imageUrl: logoImage,
     description: "Description for Project 5",
+    liveURL: "URL_FOR_LIVE_PROJECT_5",
+    githubURL: "URL_FOR_GITHUB_PROJECT_5",
   },
 ];
 
@@ -119,6 +129,8 @@ const Projects = () => {
           imageUrl={selectedProject.imageUrl}
           description={selectedProject.description}
           technologies={selectedProject.technologies}
+          liveURL={selectedProject.liveURL}
+          githubURL={selectedProject.githubURL}
           onClose={closePopup}
         />
       )}
