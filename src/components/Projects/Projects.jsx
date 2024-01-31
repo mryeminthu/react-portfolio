@@ -3,6 +3,7 @@ import { motion } from "framer-motion";
 import "./Projects.css";
 import portfolio from "./images/portfolio.png";
 import mft from "./images/mft.png";
+import da from "./images/da.png";
 import logoImage from "./images/logo.svg";
 import Popup from "./Popup";
 
@@ -26,13 +27,12 @@ const projectsData = [
     githubURL: "https://github.com/mryeminthu/Capstone-Project",
   },
   {
-    title: "Project 3",
-    technologies: ["HTML", "CSS", "React"],
-    imageUrl: logoImage,
+    title: "Dhamma Archive",
+    technologies: ["WordPress"],
+    imageUrl: da,
     description:
-      "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.",
-    liveURL: "URL_FOR_LIVE_PROJECT_3",
-    githubURL: "URL_FOR_GITHUB_PROJECT_3",
+      "I build websites with WordPress, Ruby on Rails, and React. Whether you like the ease of WordPress or the strength of Ruby on Rails and React, I can make a website for you.",
+    liveURL: "https://www.dhammaarchive.com",
   },
   {
     title: "Project 4",

@@ -51,9 +51,14 @@ const Popup = ({
               <li className="popup-btn" onClick={() => window.open(liveURL)}>
                 <i className="fas fa-external-link-alt"></i> See Live
               </li>
-              <li className="popup-btn" onClick={() => window.open(githubURL)}>
-                <i className="fab fa-github"></i> See Source
-              </li>
+              {githubURL && (
+                <li
+                  className="popup-btn"
+                  onClick={() => window.open(githubURL)}
+                >
+                  <i className="fab fa-github"></i> See Source
+                </li>
+              )}
             </ul>
           </div>
         </div>
