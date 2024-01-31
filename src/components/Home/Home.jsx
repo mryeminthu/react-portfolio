@@ -1,6 +1,6 @@
 import React from "react";
 import { motion } from "framer-motion";
-import "./home.css";
+import "./Home.css";
 import homeImage from "./home.gif";
 import resumePDF from "./resume.pdf";
 
@@ -56,7 +56,7 @@ const Home = () => {
           onClick={resumeDownload}
         >
           Resume
-          <i className="fas fa-download" style={{ marginLeft: "5px" }}></i>
+          <i className="fas fa-download"></i>
         </motion.button>
       </section>
     </div>
