@@ -12,12 +12,12 @@ const SocialIcons = () => {
         <i className="fab fa-github"></i>
       </a>
       <a
-        href="https://twitter.com/mryeminthu"
+        href="mailto:dhammaarchive@hotmail.com"
         target="_blank"
         rel="noopener noreferrer"
         className="icon-link"
       >
-        <i className="fab fa-twitter"></i>
+        <i className="fas fa-envelope"></i>
       </a>
       <a
         href="https://www.linkedin.com/in/ye-min-thu-76456a214/"
