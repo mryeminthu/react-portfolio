@@ -1,4 +1,5 @@
 import React from "react";
+import SnowfallComponent from "../Snowfall";
 import { motion } from "framer-motion";
 import "./Home.css";
 import homeImage from "./home.gif";
@@ -59,6 +60,7 @@ const Home = () => {
           <i className="fas fa-download"></i>
         </motion.button>
       </section>
+      <SnowfallComponent />
     </div>
   );
 };

@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import SnowfallComponent from "../Snowfall";
 import { motion } from "framer-motion";
 import "./Projects.css";
 import portfolio from "./images/portfolio.png";
@@ -137,6 +138,7 @@ const Projects = () => {
           onClose={closePopup}
         />
       )}
+      <SnowfallComponent />
     </div>
   );
 };

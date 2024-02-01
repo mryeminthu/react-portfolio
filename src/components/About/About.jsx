@@ -1,4 +1,5 @@
 import React from "react";
+import SnowfallComponent from "../Snowfall";
 import { motion } from "framer-motion";
 import "./About.css";
 import SocialIcons from "./SocialIcons";
@@ -48,6 +49,7 @@ const About = () => {
           <SocialIcons />
         </motion.div>
       </div>
+      <SnowfallComponent />
     </section>
   );
 };
