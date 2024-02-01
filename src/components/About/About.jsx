@@ -1,10 +1,18 @@
-import React from "react";
-import SnowfallComponent from "../Snowfall";
+import React, { useEffect, useState } from "react";
 import { motion } from "framer-motion";
+import Confetti from "react-confetti";
 import "./About.css";
 import SocialIcons from "./SocialIcons";
 
 const About = () => {
+  const [confetti, setConfetti] = useState(false);
+
+  useEffect(() => {
+    setTimeout(() => {
+      setConfetti(true);
+    }, 1500);
+  }, []);
+
   const aboutMe = [
     "I hold a computer science degree",
     "and have completed a remote web development program from Microverse,",
@@ -14,8 +22,16 @@ const About = () => {
     "If you require assistance with your website development,",
     "I am at your service.",
   ];
+
   return (
     <section className="about-me-section">
+      <Confetti
+        width={window.innerWidth}
+        height={window.innerHeight}
+        numberOfPieces={50}
+        recycle={true}
+        run={confetti}
+      />
       <motion.h2
         initial={{ opacity: 0, x: -800 }}
         animate={{ opacity: 1, x: 0 }}
@@ -49,7 +65,6 @@ const About = () => {
           <SocialIcons />
         </motion.div>
       </div>
-      <SnowfallComponent />
     </section>
   );
 };
