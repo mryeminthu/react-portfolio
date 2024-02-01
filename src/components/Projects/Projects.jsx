@@ -4,6 +4,7 @@ import "./Projects.css";
 import portfolio from "./images/portfolio.png";
 import mft from "./images/mft.png";
 import da from "./images/da.png";
+import moviem from "./images/moviem.png";
 import logoImage from "./images/logo.svg";
 import Popup from "./Popup";
 
@@ -35,12 +36,13 @@ const projectsData = [
     liveURL: "https://www.dhammaarchive.com",
   },
   {
-    title: "Project 4",
+    title: "YMT's MovieMingle",
     technologies: ["HTML", "CSS", "React"],
-    imageUrl: logoImage,
-    description: "Description for Project 4",
-    liveURL: "URL_FOR_LIVE_PROJECT_4",
-    githubURL: "URL_FOR_GITHUB_PROJECT_4",
+    imageUrl: moviem,
+    description:
+      "YMT's MovieMingle is a user-friendly app that provides a wide range of shows from different movie genres. It sources these shows from a dedicated API, ensuring a diverse collection for users.",
+    liveURL: "https://cozy-kitsune-0c212e.netlify.app",
+    githubURL: "https://github.com/mryeminthu/react-project",
   },
   {
     title: "Project 5",
