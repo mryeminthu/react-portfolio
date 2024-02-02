@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import { motion } from "framer-motion";
 import Confetti from "react-confetti";
 import "./About.css";
-import SocialIcons from "./SocialIcons";
+import SocialIcons from "../SocialIcons";
 
 const About = () => {
   const [confetti, setConfetti] = useState(false);

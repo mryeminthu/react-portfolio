@@ -1,6 +1,7 @@
 import React from "react";
 import SnowfallComponent from "../Snowfall";
 import "./Contact.css";
+import SocialIcons from "../SocialIcons";
 
 const Contact = () => {
   return (
@@ -13,21 +14,37 @@ const Contact = () => {
             Please don't hesitate to drop me a message on my Contact Page. I'm
             excited to hear from you.
           </p>
+          <SocialIcons />
         </div>
 
         <div className="contact-form">
           <form>
-            <input type="text" id="name" name="name" />
+            <input
+              name="username"
+              type="text"
+              maxlength="30"
+              placeholder="Full Name"
+              required
+            />
 
-            <input type="email" id="email" name="email" />
+            <input
+              name="email"
+              type="email"
+              placeholder="Email address"
+              required
+            />
 
-            <textarea id="message" name="message"></textarea>
+            <textarea
+              name="message"
+              maxlength="500"
+              placeholder="Write me something..."
+              required
+            ></textarea>
 
             <button type="submit">Send Message</button>
           </form>
         </div>
       </div>
-
       <SnowfallComponent />
     </section>
   );
