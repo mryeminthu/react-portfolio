@@ -18,9 +18,9 @@ const Contact = () => {
         </div>
 
         <div className="contact-form">
-          <form>
+          <form action="https://formspree.io/f/xvoekzka" method="POST">
             <input
-              name="username"
+              name="fullname"
               type="text"
               maxlength="30"
               placeholder="Full Name"
