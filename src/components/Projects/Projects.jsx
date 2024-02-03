@@ -6,6 +6,7 @@ import portfolio from "./images/portfolio.png";
 import mft from "./images/mft.png";
 import da from "./images/da.png";
 import moviem from "./images/moviem.png";
+import math from "./images/math.png";
 import tdl from "./images/tdl.png";
 import Popup from "./Popup";
 
@@ -44,6 +45,15 @@ const projectsData = [
       "YMT's MovieMingle is a user-friendly app that provides a wide range of shows from different movie genres. It sources these shows from a dedicated API, ensuring a diverse collection for users.",
     liveURL: "https://cozy-kitsune-0c212e.netlify.app",
     githubURL: "https://github.com/mryeminthu/react-project",
+  },
+  {
+    title: "Math Magicians",
+    technologies: ["HTML", "CSS", "JavaScript"],
+    imageUrl: math,
+    description:
+      "Math Magicians is a website designed for performing mathematical calculations, offering users the capability to carry out fundamental mathematical operations.",
+    liveURL: "https://ymt-calculator.onrender.com",
+    githubURL: "https://github.com/mryeminthu/math-magicians",
   },
   {
     title: "To-Do-list",
