@@ -46,12 +46,13 @@ const projectsData = [
     githubURL: "https://github.com/mryeminthu/react-project",
   },
   {
-    title: "Project 5",
-    technologies: ["HTML", "CSS", "React"],
+    title: "To-Do-list",
+    technologies: ["HTML", "CSS", "JavaScript"],
     imageUrl: logoImage,
-    description: "Description for Project 5",
-    liveURL: "URL_FOR_LIVE_PROJECT_5",
-    githubURL: "URL_FOR_GITHUB_PROJECT_5",
+    description:
+      "The Todo List Website is an online platform created to assist users in efficiently handling their tasks and to-do lists.",
+    liveURL: "https://mryeminthu.github.io/To-Do-list/dist/",
+    githubURL: "https://github.com/mryeminthu/To-Do-list",
   },
 ];
 
