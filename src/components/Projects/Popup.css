@@ -105,4 +105,8 @@
   .technology-stack li {
     font-size: 1.1rem;
   }
+
+  .popup-content-right p {
+    padding-right: 7px;
+  }
 }

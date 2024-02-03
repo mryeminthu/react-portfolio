@@ -6,7 +6,7 @@ import portfolio from "./images/portfolio.png";
 import mft from "./images/mft.png";
 import da from "./images/da.png";
 import moviem from "./images/moviem.png";
-import logoImage from "./images/logo.svg";
+import tdl from "./images/tdl.png";
 import Popup from "./Popup";
 
 const projectsData = [
@@ -48,7 +48,7 @@ const projectsData = [
   {
     title: "To-Do-list",
     technologies: ["HTML", "CSS", "JavaScript"],
-    imageUrl: logoImage,
+    imageUrl: tdl,
     description:
       "The Todo List Website is an online platform created to assist users in efficiently handling their tasks and to-do lists.",
     liveURL: "https://mryeminthu.github.io/To-Do-list/dist/",
