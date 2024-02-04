@@ -31,35 +31,37 @@ const Popup = ({
         <div className="popup-close" onClick={onClose}>
           <i className="fas fa-times"></i>
         </div>
-        <div className="popup-content-left">
-          <h2>{title}</h2>
-          {Array.isArray(technologies) && technologies.length > 0 && (
-            <div>
-              <ul className="technology-stack">
-                {technologies.map((tech, index) => (
-                  <li key={index}>{tech}</li>
-                ))}
+        <h2>{title}</h2>
+        <div className="popup-content-body">
+          <div className="popup-content-left">
+            {Array.isArray(technologies) && technologies.length > 0 && (
+              <div>
+                <ul className="technology-stack">
+                  {technologies.map((tech, index) => (
+                    <li key={index}>{tech}</li>
+                  ))}
+                </ul>
+              </div>
+            )}
+            <img src={imageUrl} alt={title} />
+          </div>
+          <div className="popup-content-right">
+            <p>{description}</p>
+            <div className="popup-btns">
+              <ul>
+                <li className="popup-btn" onClick={() => window.open(liveURL)}>
+                  <i className="fas fa-external-link-alt"></i> See Live
+                </li>
+                {githubURL && (
+                  <li
+                    className="popup-btn"
+                    onClick={() => window.open(githubURL)}
+                  >
+                    <i className="fab fa-github"></i> See Source
+                  </li>
+                )}
               </ul>
             </div>
-          )}
-          <img src={imageUrl} alt={title} />
-        </div>
-        <div className="popup-content-right">
-          <p>{description}</p>
-          <div className="popup-btns">
-            <ul>
-              <li className="popup-btn" onClick={() => window.open(liveURL)}>
-                <i className="fas fa-external-link-alt"></i> See Live
-              </li>
-              {githubURL && (
-                <li
-                  className="popup-btn"
-                  onClick={() => window.open(githubURL)}
-                >
-                  <i className="fab fa-github"></i> See Source
-                </li>
-              )}
-            </ul>
           </div>
         </div>
       </motion.div>
