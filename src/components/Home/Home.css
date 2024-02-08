@@ -49,6 +49,7 @@ section p.appear-animation span {
   border: none;
   border-radius: 7px;
   cursor: pointer;
+  padding: 10px 20px;
 }
 
 .resume-button:hover {
