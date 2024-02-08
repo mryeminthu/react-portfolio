@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from "react";
+import SkillsPopup from "./SkillsPopup";
 import { motion } from "framer-motion";
 import Confetti from "react-confetti";
 import "./About.css";
@@ -6,6 +7,7 @@ import SocialIcons from "../SocialIcons";
 
 const About = () => {
   const [confetti, setConfetti] = useState(false);
+  const [showSkillsPopup, setShowSkillsPopup] = useState(false);
 
   useEffect(() => {
     setTimeout(() => {
@@ -25,6 +27,7 @@ const About = () => {
 
   return (
     <section className="about-me-section">
+      {showSkillsPopup && <div className="overlay"></div>}
       <Confetti
         width={window.innerWidth}
         height={window.innerHeight}
@@ -64,7 +67,19 @@ const About = () => {
           <h3 className="bounce-animation">Connect with me</h3>
           <SocialIcons />
         </motion.div>
+        <motion.button
+          className="skills-button"
+          onClick={() => setShowSkillsPopup(true)}
+          initial={{ opacity: 0, x: 800 }}
+          animate={{ opacity: 1, x: 0 }}
+          transition={{ duration: 1.5 }}
+        >
+          My Skills
+        </motion.button>
       </div>
+      {showSkillsPopup && (
+        <SkillsPopup onClose={() => setShowSkillsPopup(false)} />
+      )}
     </section>
   );
 };
