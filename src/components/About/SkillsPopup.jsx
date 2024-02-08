@@ -1,4 +1,5 @@
 import React from "react";
+import { motion } from "framer-motion";
 import "./SkillsPopup.css";
 
 const SkillsPopup = ({ onClose }) => {
@@ -10,55 +11,107 @@ const SkillsPopup = ({ onClose }) => {
           <div className="category">
             <h3>Frontend</h3>
             <ul>
-              <li>
+              <motion.li
+                initial={{ opacity: 0, y: -800 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ duration: 1.5 }}
+              >
                 <i className="fab fa-html5"></i> HTML
-              </li>
-              <li>
+              </motion.li>
+              <motion.li
+                initial={{ opacity: 0, y: 800 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ duration: 1.5 }}
+              >
                 <i className="fab fa-css3"></i> CSS
-              </li>
-              <li>
+              </motion.li>
+              <motion.li
+                initial={{ opacity: 0, x: -800 }}
+                animate={{ opacity: 1, x: 0 }}
+                transition={{ duration: 1.5 }}
+              >
                 <i className="fab fa-js"></i> JavaScript
-              </li>
-              <li>
+              </motion.li>
+              <motion.li
+                initial={{ opacity: 0, x: 800 }}
+                animate={{ opacity: 1, x: 0 }}
+                transition={{ duration: 1.5 }}
+              >
                 <i className="fab fa-react"></i> React
-              </li>
-              <li>
+              </motion.li>
+              <motion.li
+                initial={{ opacity: 0, y: -800 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ duration: 1.5 }}
+              >
                 <i className="fas fa-code"></i> Redux
-              </li>
+              </motion.li>
             </ul>
           </div>
           <div className="category">
             <h3>Backend</h3>
             <ul>
-              <li>
+              <motion.li
+                initial={{ opacity: 0, y: -800 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ duration: 1.5 }}
+              >
                 <i className="fas fa-gem"></i> Ruby
-              </li>
-              <li>
+              </motion.li>
+              <motion.li
+                initial={{ opacity: 0, y: 800 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ duration: 1.5 }}
+              >
                 <i className="fas fa-gem"></i> Ruby on Rails
-              </li>
-              <li>
+              </motion.li>
+              <motion.li
+                initial={{ opacity: 0, x: -800 }}
+                animate={{ opacity: 1, x: 0 }}
+                transition={{ duration: 1.5 }}
+              >
                 <i className="fas fa-database"></i> Postgresql
-              </li>
+              </motion.li>
             </ul>
           </div>
           <div className="category">
             <h3>Frameworks/CMS/Tools</h3>
             <ul>
-              <li>
+              <motion.li
+                initial={{ opacity: 0, x: 800 }}
+                animate={{ opacity: 1, x: 0 }}
+                transition={{ duration: 1.5 }}
+              >
                 <i className="fab fa-git-alt"></i> Git
-              </li>
-              <li>
+              </motion.li>
+              <motion.li
+                initial={{ opacity: 0, y: 800 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ duration: 1.5 }}
+              >
                 <i className="fab fa-github"></i> GitHub
-              </li>
-              <li>
+              </motion.li>
+              <motion.li
+                initial={{ opacity: 0, y: -800 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ duration: 1.5 }}
+              >
                 <i className="fab fa-bootstrap"></i> Bootstrap
-              </li>
-              <li>
+              </motion.li>
+              <motion.li
+                initial={{ opacity: 0, x: -800 }}
+                animate={{ opacity: 1, x: 0 }}
+                transition={{ duration: 1.5 }}
+              >
                 <i className="fab fa-wordpress"></i> WordPress
-              </li>
-              <li>
+              </motion.li>
+              <motion.li
+                initial={{ opacity: 0, x: 800 }}
+                animate={{ opacity: 1, x: 0 }}
+                transition={{ duration: 1.5 }}
+              >
                 <i className="fab fa-css3"></i> TailwindCSS
-              </li>
+              </motion.li>
             </ul>
           </div>
         </div>
