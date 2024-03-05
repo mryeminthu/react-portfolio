@@ -8,6 +8,7 @@ import da from "./images/da.png";
 import moviem from "./images/moviem.png";
 import math from "./images/math.png";
 import tdl from "./images/tdl.png";
+import gus from "./images/gus.png";
 import Popup from "./Popup";
 
 const projectsData = [
@@ -45,6 +46,15 @@ const projectsData = [
       "YMT's MovieMingle is a user-friendly app that provides a wide range of shows from different movie genres. It sources these shows from a dedicated API, ensuring a diverse collection for users.",
     liveURL: "https://cozy-kitsune-0c212e.netlify.app",
     githubURL: "https://github.com/mryeminthu/react-project",
+  },
+  {
+    title: "GitHub User Search",
+    technologies: ["HTML", "CSS", "React"],
+    imageUrl: gus,
+    description:
+      "GitHub User Search is an app that enables users to search for their GitHub accounts directly within the app.",
+    liveURL: "https://ymt-github-user-search.onrender.com/",
+    githubURL: "https://github.com/mryeminthu/github-user-search",
   },
   {
     title: "Math Magicians",
